@@ -34,7 +34,8 @@ a{
 .weather-data {
     font-family: 'Merriweather', serif;
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    padding: 25px;
 }
 
 .temp-unit{
