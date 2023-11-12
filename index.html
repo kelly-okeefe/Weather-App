@@ -6,7 +6,26 @@
     <title>Weather App</title>
 </head>
 <body>
-    Hello World
+    <div class="container">
+        <h1>Weather App</h1>
+        <h2 id="date-time">Sun 22 Oct 2023 12:37pm</h2>
+        <form id="search-form">
+            <button class="location-button" title="Click to see the weather in your location">📍</button>
+            <input type="text" id="city-input" placeholder="Enter a city" required>
+            <input type="submit" value="Search">
+        </form>
+        <div id="weather-data">
+        <div class="icon">
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
+        </div>
+        <div class="temperature">44°c</div>
+        <div class="description">Sunny</div>
+        <div class="details">
+            <div>Feels like: </br> 40°c</div>
+            <div>Humidity: </br> 50%</div>
+            <div>Wind Speed: </br> 2 m/s</div>
+        </div>
+        </div>
     <footer>
         This project was coded by <a href="https://github.com/kelly-okeefe" target="_blank"> Kelly O'Keefe</a> 👩‍🦰 and is <a href="https://github.com/kelly-okeefe/Weather-App" target="_blank">open-sourced on GitHub,</a> 
         and is hosted <a href="https://kelly-okeefe-weather-app.netlify.app/" target="_blank"> on Netlify.</a></footer>
