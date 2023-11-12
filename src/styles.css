@@ -12,9 +12,18 @@ body {
     border-radius: 5px;
     padding: 25px;
 }
+
+h1{
+    font-size: 48px;
+    color: #EF476F;
+}
+
+h2{
+    color: #06D6A0;
+}
 h1, h2 {
     font-family: 'Oswald', sans-serif;
-    color: #EF476F;
+    letter-spacing: 1px;
 }
 .weather-data {
     font-family: 'Merriweather', serif;
@@ -50,6 +59,8 @@ form input[type="submit"]{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
@@ -57,8 +68,8 @@ form input[type="submit"]{
 }
 
 form input[type="submit"]:hover{
-    background-color: #FFD166;
-    color: #06D6A0;
+    background-color: #EF476F;
+    color: #FFFCF9;
 }
 
 .icon img{
@@ -102,7 +113,7 @@ form input[type="submit"]:hover{
     border-radius: 5px;
     text-align: center;
     min-height: 45px;
-    font-size: larger;
+    letter-spacing: 1.5px;
 }
 
 footer{
