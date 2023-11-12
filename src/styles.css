@@ -16,6 +16,7 @@ body {
 h1{
     font-size: 48px;
     color: #EF476F;
+    margin: 0;
 }
 
 h2{
@@ -29,8 +30,17 @@ h1, h2 {
 a{
     color: #EF476F;
 }
+
 .weather-data {
     font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.temp-unit{
+    display: inline;
+    margin-top: 0px;
+    font-size: 22px;
 }
 
 .location-button{
