@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: #f9f7fe;
 }
 .container {
@@ -14,6 +15,47 @@ body {
 h1 {
     font-family: 'Oswald', sans-serif;
 }
-.weather-date {
+.weather-data {
     font-family: 'Merriweather', serif;
+}
+
+.location-button{
+    background-color:#FFFCF9;
+    border: none;
+    font-size: 25px;
+}
+.location-button:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    background: #06D6A0;
+    color:#FFD166;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: #FFD166;
+    color: #06D6A0;
 }
