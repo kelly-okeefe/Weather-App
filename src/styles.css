@@ -1,0 +1,19 @@
+body {
+    background-color: #f9f7fe;
+}
+.container {
+    background: #FFFCF9;
+    box-shadow: 0 0 5px #26547C;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 25px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+.weather-date {
+    font-family: 'Merriweather', serif;
+}
