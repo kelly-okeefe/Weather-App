@@ -10,7 +10,8 @@ function refreshWeather(response) {
    let feelsLike = response.data.temperature.feels_like;
    let timeElement = document.querySelector("#date-time");
    let date = new Date(response.data.time * 1000);
-   console.log(response);
+   let iconElement = document.querySelector("#icon");
+
    cityElement.innerHTML = response.data.city;
    timeElement.innerHTML = formatDate(date);
    descriptionElement.innerHTML = response.data.condition.description;
@@ -18,6 +19,7 @@ function refreshWeather(response) {
    windSpeedElement.innerHTML = `${Math.round(windSpeed)} km/h`;
    temperatureElement.innerHTML = `${Math.round(temperature)}°c`;
    feelsLikeElement.innerHTML = `${Math.round(feelsLike)}°c`;
+   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class = "weather-icon"/>`;
 }
 
 function formatDate(date) {
