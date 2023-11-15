@@ -17,7 +17,7 @@ function refreshWeather(response) {
    timeElement.innerHTML = formatDate(date);
    descriptionElement.innerHTML = response.data.condition.description;
    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-   windSpeedElement.innerHTML = `${Math.round(windSpeed)} km/h`;
+   windSpeedElement.innerHTML = `${windSpeed} km/h`;
    temperatureElement.innerHTML = `${Math.round(temperature)}°c`;
    feelsLikeElement.innerHTML = `${Math.round(feelsLike)}°c`;
    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class = "weather-icon"/>`;
@@ -28,6 +28,7 @@ function formatDate(date) {
     let hours = date.getHours();
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
+
 
     if (minutes < 10) {
         minutes = `0${minutes}`;
