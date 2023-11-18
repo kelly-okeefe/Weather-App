@@ -25,6 +25,7 @@ h2{
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 a{
@@ -137,6 +138,7 @@ form input[type="submit"]:hover{
     display: flex;
     padding-top: 15px;
     padding-bottom: 15px;
+    justify-content: space-around;
     
 }
 
@@ -145,6 +147,11 @@ form input[type="submit"]:hover{
     color: #EF476F;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+}
+
+.weather-forecast-icon{
+    text-align: center;
+    padding: 10px;
 }
 
 .weather-forecast-temperatures{
@@ -158,10 +165,6 @@ form input[type="submit"]:hover{
     font-weight: bolder;
     font-size: 16px;
 }
-
-
-
-
 
 footer{
     padding: 15px;
