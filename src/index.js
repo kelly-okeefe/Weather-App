@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function refreshWeather(response) {
    let temperatureElement = document.querySelector("#temperature");
    let temperature = response.data.temperature.current;
@@ -106,6 +112,9 @@ function displayForecast(response) {
 forecastElement.innerHTML = forecastHtml;
 
 }
+
+let locationButton = document.querySelector(".location-button");
+locationButton.addEventListener("click", getLocation);
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
