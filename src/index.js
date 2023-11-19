@@ -1,4 +1,6 @@
-
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(showLocation);
+  }
 
 
 
