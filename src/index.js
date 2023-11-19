@@ -1,5 +1,5 @@
 function getLocation() {
-    navigator.geolocation.getCurrentPosition(showLocation);
+    navigator.geolocation.getCurrentPosition(callLocationWeather);
   }
 
   function callLocationWeather(position) {
@@ -7,11 +7,9 @@ function getLocation() {
     let lon = position.coords.longitude;
     let apiKey = "e7f44dtf8936b0ao9a003f375cfb3403";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
-    axios.get(`${apiUrl}`).then(locationWeather);
+    axios.get(`${apiUrl}`).then(refreshWeather);
   }
-
-
-
+  
 function refreshWeather(response) {
    let temperatureElement = document.querySelector("#temperature");
    let temperature = response.data.temperature.current;
